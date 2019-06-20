@@ -89,3 +89,8 @@ ul{
 .container {width: 100px;}
 .buttin-blue {padding:10px 10px;}
 }
+#map {
+	width: 600px;
+	height: 300px;
+	margin: 0px auto;
+}
