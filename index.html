@@ -8,6 +8,8 @@
 	<script src="https://kit.fontawesome.com/1e2510e7f4.js"></script>
 	<link rel="stylesheet" href="style.css">
   <meta name="og:image" content="https://lilasad.github.io/my_profile/">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
   <div> 
@@ -33,6 +35,14 @@
   </li>
 </ul>
 </div>
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibGlsYXNhIiwiYSI6ImNqeDRweDNiaTA1djI0NHF0bW9rM2QxcXIifQ.fk8zBaWAXeKKZKslH9JJdA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
 <ul class="list-align">
   <li>
   	<a href="https://www.facebook.com/Destockpriv%C3%A9-Dreux-1806233509672323/" target="_blank"> fb
