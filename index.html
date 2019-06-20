@@ -37,14 +37,16 @@
 </div>
 <div id='map' ></div>
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibGlsYXNhIiwiYSI6ImNqeDRweDNiaTA1djI0NHF0bW9rM2QxcXIifQ.fk8zBaWAXeKKZKslH9JJdA';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-var marker = new mapboxgk.Marker()
-.setLngLat([48.864906, 2.379825)
-.addTo(map);
+  mapboxgl.accessToken = 'pk.eyJ1IjoibGlsYXNhIiwiYSI6ImNqeDRweDNiaTA1djI0NHF0bW9rM2QxcXIifQ.fk8zBaWAXeKKZKslH9JJdA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [2.379825, 48.864906],
+    zoom: 8
+  });
+  var marker = new mapboxgl.Marker()
+    .setLngLat([2.379825, 48.864906])
+    .addTo(map);
 </script>
 <ul class="list-align">
   <li>
